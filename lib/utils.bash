@@ -55,7 +55,15 @@ install_version() {
 
 	(
 		mkdir -p "$install_path"
-		cp -r "$ASDF_DOWNLOAD_PATH"/bin "$install_path"
+		cp -r "$ASDF_DOWNLOAD_PATH"/. "$install_path"
+
+		local working_path=$(pwd)
+
+		cd "$install_path"
+		bundle config --local path "vendor/bundle"
+		bundle install
+
+		cd "$working_path"
 
 		local tool_cmd
 		tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
