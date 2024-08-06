@@ -60,7 +60,6 @@ install_version() {
 		local working_path=$(pwd)
 
 		cd "$install_path"
-		bundle config --local path "vendor/bundle"
 		bundle install
 
 		cd "$working_path"
