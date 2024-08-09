@@ -62,7 +62,6 @@ install_version() {
 		cd "$install_path"
 		bundle config --local path "vendor/bundle"
 		bundle install
-		bundle binstubs fastlane --force
 
 		cd "$working_path"
 
