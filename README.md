@@ -48,6 +48,15 @@ fastlane --help
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
 install & manage versions.
 
+### Important Notice
+
+You must reinstall the fastlane plugin each time you change your Ruby version.
+
+```shell
+mise plugins uninstall fastlane -p
+mise install
+```
+
 # Contributing
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
