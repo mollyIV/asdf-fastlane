@@ -10,7 +10,7 @@ source "${plugin_dir}/lib/utils.bash"
 
 mkdir -p "$ASDF_DOWNLOAD_PATH"
 
-cat > "$ASDF_DOWNLOAD_PATH/Gemfile" <<EOF
+cat >"$ASDF_DOWNLOAD_PATH/Gemfile" <<EOF
 source("https://rubygems.org")
 gem "fastlane", "= $ASDF_INSTALL_VERSION"
 EOF
