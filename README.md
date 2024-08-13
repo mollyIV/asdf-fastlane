@@ -57,6 +57,8 @@ mise plugins uninstall fastlane -p
 mise install
 ```
 
+Do not install Ruby and the fastlane plugin simultaneously. The fastlane plugin requires certain gems to function properly, so the desired Ruby version should be set before installing the plugin.
+
 # Contributing
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
